@@ -10,17 +10,31 @@
 
 
     <TextView
+        android:id="@+id/tvOne"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Hello World!"
+        android:gravity="center"
+        android:orientation="vertical"
         android:textSize="30sp"
         />
     <TextView
+        android:id="@+id/tvTwo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
+        android:text="Hello World!two"
+        android:gravity="start|end"
+        android:orientation="vertical"
         android:textSize="30sp"
         />
+    <EditText
+        android:id="@+id/atOne"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Любой текст"
+        android:textSize="30sp"
+        >
+    </EditText>
 
 
 </LinearLayout>

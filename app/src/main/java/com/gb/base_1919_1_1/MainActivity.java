@@ -10,5 +10,9 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        findViewById(R.id.tvOne);
+        findViewById(R.id.tvTwo);
+        findViewById(R.id.atOne);
     }
 }
