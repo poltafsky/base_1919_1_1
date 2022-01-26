@@ -8,12 +8,25 @@
     android:orientation="vertical"
     tools:context=".MainActivity">
 
+    <Switch
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+    </Switch>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:text="@string/buttonOne" />
 
     <TextView
         android:id="@+id/tvOne"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Hello World!"
+
         android:gravity="center"
         android:orientation="vertical"
         android:textSize="30sp"
@@ -35,6 +48,4 @@
         android:textSize="30sp"
         >
     </EditText>
-
-
 </LinearLayout>
