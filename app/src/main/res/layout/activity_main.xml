@@ -8,13 +8,18 @@
     android:orientation="vertical"
     tools:context=".MainActivity">
 
-    <Switch
+    <androidx.appcompat.widget.SwitchCompat
+        tools:targetApi="donut"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:gravity="start|end"
+        android:orientation="vertical"
+        android:textSize="30sp">
 
-    </Switch>
-
+    </androidx.appcompat.widget.SwitchCompat>
     <Button
+        android:allowClickWhenDisabled="false"
+        android:id="@+id/butOne"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
@@ -25,20 +30,29 @@
         android:id="@+id/tvOne"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-
-        android:gravity="center"
+        android:text="Hello\n World!"
+        android:layout_gravity="top|center"
         android:orientation="vertical"
+        android:textStyle="italic"
+        android:lineSpacingMultiplier="2"
+        android:textColor="#0FC816"
         android:textSize="30sp"
+        android:background="@color/black"
         />
     <TextView
         android:id="@+id/tvTwo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!two"
-        android:gravity="start|end"
+        android:text="У лукоморья дуб зелёный;\n Златая цепь на дубе том:\nИ днём и ночью кот учёный\n"
+        android:lineSpacingMultiplier="1"
+        android:shadowColor="#DC1515"
+        android:shadowDx="2"
+        android:shadowDy="2"
+        android:shadowRadius="5"
+        android:gravity="center"
         android:orientation="vertical"
         android:textSize="30sp"
+        android:ems="14"
         />
     <EditText
         android:id="@+id/atOne"
@@ -46,6 +60,27 @@
         android:layout_height="wrap_content"
         android:text="Любой текст"
         android:textSize="30sp"
+        android:inputType="textPassword"
         >
     </EditText>
+    <EditText
+        android:id="@+id/atSecond"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="30sp"
+        android:inputType="phone"
+        >
+
+    </EditText>
+    <CheckBox
+        android:shadowColor="#DD0F0F"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+    </CheckBox>
+    <ToggleButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+    </ToggleButton>
 </LinearLayout>

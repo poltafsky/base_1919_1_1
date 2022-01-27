@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/atOne"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Любой текст"
+        android:textSize="30sp"
+        android:inputType="text"
+        >
+    </EditText>
+    <EditText
+        android:id="@+id/atTwo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Имя"
+        android:textSize="30sp"
+        >
+    </EditText>
+
+    <EditText
+        android:id="@+id/atZero"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="введите телефон"
+        android:inputType="phone"
+        android:textSize="30sp"
+        >
+    </EditText>
+    <EditText
+        android:id="@+id/atFour"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="введите пароль"
+        android:inputType="textPassword"
+        android:textSize="30sp"
+        >
+    </EditText>
+    <EditText
+        android:id="@+id/atFive"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="введите номер"
+        android:inputType="none"
+        android:textSize="30sp"
+        >
+    </EditText>
+    <CalendarView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+</LinearLayout>
