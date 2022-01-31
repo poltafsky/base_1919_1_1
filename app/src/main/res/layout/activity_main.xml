@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -9,20 +8,21 @@
     tools:context=".MainActivity">
 
     <androidx.appcompat.widget.SwitchCompat
-        tools:targetApi="donut"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:gravity="start|end"
         android:orientation="vertical"
-        android:textSize="30sp">
+        android:textSize="30sp"
+        tools:targetApi="donut">
 
     </androidx.appcompat.widget.SwitchCompat>
+
     <Button
-        android:allowClickWhenDisabled="false"
         android:id="@+id/butOne"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
+        android:allowClickWhenDisabled="false"
         android:gravity="center"
         android:text="@string/buttonOne" />
 
@@ -30,54 +30,54 @@
         android:id="@+id/tvOne"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello\n World!"
         android:layout_gravity="top|center"
-        android:orientation="vertical"
-        android:textStyle="italic"
+        android:background="@color/black"
         android:lineSpacingMultiplier="2"
+        android:orientation="vertical"
+        android:text="@string/hello_world"
         android:textColor="#0FC816"
         android:textSize="30sp"
-        android:background="@color/black"
-        />
+        android:textStyle="italic" />
+
     <TextView
         android:id="@+id/tvTwo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="У лукоморья дуб зелёный;\n Златая цепь на дубе том:\nИ днём и ночью кот учёный\n"
+        android:ems="14"
+        android:gravity="center"
         android:lineSpacingMultiplier="1"
+        android:orientation="vertical"
         android:shadowColor="#DC1515"
         android:shadowDx="2"
         android:shadowDy="2"
         android:shadowRadius="5"
-        android:gravity="center"
-        android:orientation="vertical"
-        android:textSize="30sp"
-        android:ems="14"
-        />
+        android:text="@string/text_two"
+        android:textSize="30sp" />
+
     <EditText
         android:id="@+id/atOne"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Любой текст"
-        android:textSize="30sp"
         android:inputType="textPassword"
-        >
-    </EditText>
+        android:text="@string/text"
+        android:textSize="30sp" />
+
     <EditText
         android:id="@+id/atSecond"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textSize="30sp"
         android:inputType="phone"
-        >
+        android:textSize="30sp">
 
     </EditText>
+
     <CheckBox
-        android:shadowColor="#DD0F0F"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:shadowColor="#DD0F0F">
 
     </CheckBox>
+
     <ToggleButton
         android:layout_width="wrap_content"
         android:layout_height="wrap_content">

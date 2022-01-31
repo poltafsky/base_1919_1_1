@@ -1,4 +1,13 @@
 <resources>
     <string name="app_name">base_1919_1_1</string>
     <string name="buttonOne">Нажми меня</string>
+    <string name="hello_world">Hello\n World!</string>
+    <string name="text">random text</string>
+    <string name="text_two">У лукоморья дуб зелёный;\n Златая цепь на дубе том:\nИ днём и ночью кот учёный\n</string>
+    <string name="text_second">Любой текст</string>
+    <string name="name">Имя</string>
+    <string name="phone">введите телефон</string>
+    <string name="password">введите пароль</string>
+    <string name="nomer">введите номер</string>
+
 </resources>
